@@ -12,7 +12,7 @@
 //
 //I removed: 
 //     require turbolinks 
-//for an angular app
+//for angular app
 //
 //= require jquery
 //= require jquery_ujs
@@ -22,11 +22,11 @@
 //
 //= require angular
 //
-//Next, angular-file-upload has to added after angularJS:
+//Next, angular-file-upload has to be added after angularJS:
 //= require angular-file-upload
 //
 //And for some inexplicable reason, this is needed:
 //= require main
-//I would think require_tree would take care of that file.
+//I would think 'require_tree .' would be enough for that file.
 //
 //= require_tree .
