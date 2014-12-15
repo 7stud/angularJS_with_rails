@@ -1,28 +1,39 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* AngularJS version:
 
-Things you may want to cover:
+    1.3.6
 
-* Ruby version
+I created the following file containing angularJS 1.3.6:
 
-* System dependencies
+    app/assets/javascripts/angular.js
 
-* Configuration
+In addition, current versions of AngularJS do not include ngRoute, which allows you
+to use ng-view in your tags.  You have to include a separate file for ngRoute.
+I created the following file containing ngRoute:
 
-* Database creation
+    app/assets/javascripts/angular-route.js
 
-* Database initialization
+* Rails version:
 
-* How to run the test suite
+    4.0.0
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby version:
 
-* Deployment instructions
+    2.0.0p481 (2014-05-08 revision 45883) [x86_64-darwin10.8.0]
 
-* ...
+Most of the action takes place inside:
+
+    app/assets/javascripts
+
+Also, see:
+
+    app/assets/javascripts/application.js
+
+for the necessary require statements.
+
+I put the html templates outside the the app/assets/javscripts folder in the rails directory:
+
+    public/templates
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
