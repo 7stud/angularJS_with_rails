@@ -32,7 +32,7 @@ Most of the AngularJS files are located inside:
 
     app/assets/javascripts
 
-So take a look in that directory. Also, see:
+so take a look at how those files are organized. Also, see:
 
     app/assets/javascripts/application.js
 
@@ -43,7 +43,7 @@ I put the html templates outside the the app/assets/javscripts folder in the rai
 
     public/templates
 
-By default, rails looks for resources inside the 'public/' directory before matching routes.
+By default, rails looks for files inside the 'public/' directory before matching routes.
 
 I deployed to Heroku, and everythig worked fine--despite claims by some tutorials that
 the asset pipeline in production mode wouldn't work properly unless things were done
