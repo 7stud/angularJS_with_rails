@@ -17,13 +17,10 @@
 //= require jquery
 //= require jquery_ujs
 //
-//The order below is important, and require_tree . just adds the files
-//in some random order:
+//require_tree . just adds all the files in some random
+//order, but for AngularJS the order is important:
 //
 //= require angular
-//
-//Next, angular-file-upload has to be added after angularJS:
-//= require angular-file-upload
 //
 //And for some inexplicable reason, this is needed:
 //= require main
