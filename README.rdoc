@@ -1,5 +1,11 @@
 == README
 
+I couldn't find any tutorials for a simple AngularJS setup with Rails.
+All the tutorials I looked either created models, tests, etc., which have 
+nothing to do with setting up AngularJS, or they used a gem called
+'angular-rails-templates', which they claimed was mandatory. So I messed 
+around until I got something simpler to work.
+
 * AngularJS version:
 
     1.3.6
@@ -22,18 +28,23 @@ I created the following file containing ngRoute:
 
     2.0.0p481 (2014-05-08 revision 45883) [x86_64-darwin10.8.0]
 
-Most of the action takes place inside:
+Most of the setup takes place inside:
 
     app/assets/javascripts
+
+So take a look in that directory.
 
 Also, see:
 
     app/assets/javascripts/application.js
 
-for the necessary require statements.
+for the necessary require statements to include all the js files in the proper
+order.
 
 I put the html templates outside the the app/assets/javscripts folder in the rails directory:
 
     public/templates
+
+By default, rails looks for resources inside the 'public/' directory before matching routes.
 
 
