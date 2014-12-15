@@ -10,7 +10,23 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//I removed: 
+//     require turbolinks 
+//for an angular app
+//
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//
+//The order below is important, and require_tree . just adds the files
+//in some random order:
+//
+//= require angular
+//
+//Next, angular-file-upload has to added after angularJS:
+//= require angular-file-upload
+//
+//And for some inexplicable reason, this is needed:
+//= require main
+//I would think require_tree would take care of that file.
+//
 //= require_tree .

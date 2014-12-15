@@ -1,0 +1,35 @@
+<script>
+$( document ).ready(function() {
+  $("#expense_day").on("change", function() {
+
+    var selected_date = $(this).val();
+
+    $.get( 
+      "/expenses", 
+      { target_date: selected_date }, 
+      function(table) {
+        $("#expenses").replaceWith(table)  
+      }
+    );
+
+  });
+});
+
+</script>
+  
+
+<h1>Expenses#index</h1>
+<p>Find me in app/views/expenses/index.html.erb</p>
+
+<div>
+<select id='expense_day'>
+<option value="all">All</option>
+<option value="2014-10-5">10/5/14</option>
+<option value="2014-10-6">10/6/14</option>
+</select>
+</div>
+
+
+<%= render "shared/table" %>
+
+

@@ -1,0 +1,19 @@
+<%= form_tag('/file/some_action',
+             :method => :get, 
+             :id => 'form_for_dir_select') do 
+%>
+
+<div id="dir_list">
+<%= render(partial: 'dir_list', 
+           locals: {:dir_list => @dir_list })
+%> 
+</div>
+
+<div>
+<%= select_tag "dogs", options_for_select(@dogs) %>
+</div>
+<div>
+<%= select_tag "dog_names", options_for_select(@dog_names) %>
+</div>
+
+<% end %>
