@@ -28,13 +28,11 @@ I created the following file containing ngRoute:
 
     2.0.0p481 (2014-05-08 revision 45883) [x86_64-darwin10.8.0]
 
-Most of the setup takes place inside:
+Most of the AngularJS files are located inside:
 
     app/assets/javascripts
 
-So take a look in that directory.
-
-Also, see:
+So take a look in that directory. Also, see:
 
     app/assets/javascripts/application.js
 
@@ -46,5 +44,9 @@ I put the html templates outside the the app/assets/javscripts folder in the rai
     public/templates
 
 By default, rails looks for resources inside the 'public/' directory before matching routes.
+
+I deployed to Heroku, and everythig worked fine--despite claims by some tutorials that
+the asset pipeline in production mode wouldn't work properly unless things were done
+their way.
 
 
