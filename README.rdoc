@@ -1,7 +1,7 @@
 == README
 
 I couldn't find any tutorials for a simple AngularJS setup with Rails.
-All the tutorials I looked either created models, tests, etc., which have 
+All the tutorials I looked at either created models, tests, etc., which have 
 nothing to do with setting up AngularJS, or they used a gem called
 'angular-rails-templates', which they claimed was mandatory. So I messed 
 around until I got something simpler to work.
